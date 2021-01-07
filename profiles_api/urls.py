@@ -6,7 +6,7 @@ from profiles_api import views
 """This is the way to register a URL for a ViewSet"""
 router = DefaultRouter()
 router.register('hello-viewset', views.HelloViewSet, base_name='hello-viewset')
-
+router.register('profile-viewset', views.UserProfileViewSet)
 
 """This is the way to register a URL for a APIView"""
 urlpatterns = [
